@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AppProyecto</string>
+    <string name="app_camara">Tomar Foto</string>
+    <string name="guardar">Guardar</string>
+    <string name="volver">Volver</string>
+</resources>

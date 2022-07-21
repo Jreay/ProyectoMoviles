@@ -1,0 +1,167 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+    /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    padding-top: 2rem;
+    text-align: center;
+    margin-bottom: 6px;
+    color: rgb(255, 126, 5);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100%;
+}
+
+h5 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 1rem;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    /** = 1200px; **/
+    margin: 0 auto;
+}
+
+.site-header {
+    background-color: #333333;
+    padding: 1rem 0 1rem 0;
+}
+
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 40rem;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-header {
+        text-align: left;
+    }
+}
+
+.contenido-header h1 {
+    color: #ffffff;
+    max-width: 60rem;
+    line-height: 2;
+}
+
+.barra {
+    padding-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+/** Navegacion **/
+
+.navegacion a {
+    color: #31bbfb;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        font-size: 1.2rem;
+        /** = 18px **/
+        margin-right: 15px;
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+
+.navegacion a:hover {
+    color: #43fbcd;
+}
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.back {
+    display: flex;
+    float: right;
+}
+
+
+/**Footer*/
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.site-footer {
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer {
+    padding: 2rem 0 1.5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.site-footer nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .site-footer nav {
+        display: block;
+    }
+}
+
+.copyright {
+    margin: 0;
+    color: #ffffff;
+}
